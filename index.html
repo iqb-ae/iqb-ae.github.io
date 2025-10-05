@@ -3,52 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Iqbae] - Portfolio</title>
-    <style>
-        /* Ini adalah CSS untuk memberi sedikit gaya, langsung di dalam file HTML agar simpel */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        p {
-            font-size: 1.2em;
-            color: #666;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+    <title>Iqbae - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Muhamad Bahtiar Rizqi</h1>
-        <p>Graphic Designer</p>
-        <a href="[be.net/iqbae]" class="button">View my arts in Behance</a>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Iqbae</a>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-content hidden">
+            <h1>Muhamad Bahtiar Rizqi</h1>
+            <p>Graphic Designer</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container hidden">
+            <h2>About Me</h2>
+            <p>
+                 I’m a graphic designer with hands-on experience in digital art, editing, branding, photography, and content strategy. I help ideas become strong, clear visuals that resonate with audiences and support business goals. 
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container hidden">
+            <h2>My Work</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/007bff/ffffff?text=Project+Image" alt="Project 1">
+                    <div class="project-card-content">
+                        <h3>Visual Identity</h3>
+                        <p>Brand Identity | Logo Design</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/28a745/ffffff?text=Project+Image" alt="Project 2">
+                    <div class="project-card-content">
+                        <h3>Digital Illustration</h3>
+                        <p>Anime | Character Illustration</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/dc3545/ffffff?text=Project+Image" alt="Project 3">
+                    <div class="project-card-content">
+                        <h3>Photographic Journal</h3>
+                        <p>A Glimpse Through My Lens</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container hidden">
+            <h2>Get in Touch</h2>
+            <p>Feel free to reach out! I'm always open to discussing new projects or creative ideas.</p>
+            <div class="social-links">
+                <a href="mailto:your.email@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="[behance.net/iqbae]" target="_blank"><i class="fab fa-behance"></i></a>
+                <a href="[linkedin.com/in/iqbae]" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="[instagram.com/iqb.ae]" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
